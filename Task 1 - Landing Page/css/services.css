@@ -1,0 +1,449 @@
+/* 
+  Variables
+*/
+:root {
+    --color-primary: #be0d28;
+    --color-secondary: #e64848;
+    --color-grey: rgb(240, 240, 240);
+    --color-dark-grey: #EEC1C8;
+    --color-header: rgb(160, 11, 11);
+    --color-footer: var(--color-header);
+  }
+  
+  
+  *,
+  *::after,
+  *::before {
+      margin: 0;
+      padding: 0;
+      box-sizing: inherit;
+  }
+  
+  html {
+      // This defines what 1rem is
+      font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+  }
+  
+  body {
+    font-family: "Montserrat";
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat";
+    font-weight: 900;
+  }
+  
+  p {
+    color: #8f8f8f;
+    font-size: 1.3rem;
+  }
+  
+  
+  
+  
+  
+  /* Headings */
+  
+  .big-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+  }
+  
+  .section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  
+  
+  
+  
+  
+  /* Containers */
+
+  .container-fluid {
+    padding: 7% 10%;
+  }
+  
+  .container-nav {
+    background-color: var(--color-header);
+    padding: 0 5%;
+    border-bottom: 1px solid var(--color-dark-grey);
+  }
+  
+
+
+
+
+  /* Sections */
+  .colored-section {
+    background-color: var(--color-primary);
+    color: #fff;
+  }
+  
+  .grey-section {
+    background-color: var(--color-grey);
+    color: black;
+  }
+  
+  .white-section {
+    background-color: #fff;
+  }
+  
+  
+  
+  
+  
+  /* Navigation Bar */
+
+.navbar {
+  z-index: 2;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.nav-logo,
+.footer-logo {
+  width: 50%;
+}
+
+.navbar-nav {
+  text-align: left;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-family: "Montserrat-light";
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 3px;
+  transition: all .3s;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid var(--color-dark-grey);
+  transition: all .3s;
+}
+
+.services-link {
+  border-bottom: 1px solid var(--color-dark-grey);
+}
+
+.fa-chevron-right {
+  color: var(--color-primary);
+  display: none;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+} 
+  
+
+  
+  
+  /* Services Section */
+  
+  #services {
+    background-color: var(--color-grey);
+    /* text-align-last: left; */
+  }
+  
+  .spacer-services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    gap: 5px;
+  }
+  
+  .line {
+    width: 10%;
+    height: 2px;
+    background-color: currentColor;
+  }
+  
+  .fa-square {
+    transform: rotate(45deg);
+  }
+  
+  .card {
+    background-color: var(--color-grey);
+    border: none;
+    padding: 2% 4%;
+    text-align: left;
+    transition: all .3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transform: translateY(-5px);
+  }
+
+
+
+  
+  
+  
+  /* Features Section*/
+  
+  
+  #features {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .feature-title {
+    color: var(--color-primary);
+    font-size: 2rem;
+    transition: all .3s;
+  }
+  
+  .feature-box {
+    padding: 5%;
+  }
+  
+  .icon {
+    color: var(--color-primary);
+  }
+  
+  .icon:hover {
+    color: var(--color-secondary);
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* Footer Section */
+
+footer {
+  background-color: var(--color-footer);
+}
+
+footer span, 
+footer i, 
+footer p {
+  font-size: .9rem;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.footer-list {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.footer-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-item {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.phone-icon {
+  padding-bottom: .9rem;
+  margin-right: .5rem;
+}
+
+.location-icon {
+  padding-bottom: .9rem;
+  margin-right: .5rem;
+}
+
+.social-icon {
+  padding: 20px 10px;
+}
+  
+  
+  
+  
+  
+  
+  /* Media Queries */
+  
+  @media (max-width: 700px) {
+  
+    html {
+      font-size: 50%; // 1rem = 8px; 8px/16px = 50%
+    }
+  
+    p {
+      font-size: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 3rem;
+    }
+  
+    h4 {
+      font-size: 4rem;
+    }
+  
+    .big-heading {
+      font-size: 4rem;
+      line-height: 1.5;
+      font-weight: 900;
+    }
+    
+    .section-heading {
+      font-size: 3.5rem;
+      line-height: 1.5;
+    }
+
+    .container-nav {
+      padding: 0;
+    }
+  
+    .navbar {
+      padding: 0;
+    }
+  
+    .navbar-brand {
+      display: inline;
+      width: 80%;
+      margin: 0;
+      padding: 2% 0;
+      padding-left: 5%;
+      text-align: left;
+    }
+  
+    .navbar-toggler {
+      margin-right: 5%;
+      font-size: 1.8rem;
+    }
+  
+    .navbar-nav {
+      background-color: white;
+    }
+    
+    .navbar-dark .navbar-nav .nav-item {
+      padding: 0;
+    }
+  
+    .navbar-dark .navbar-nav .nav-link {
+      font-size: 1.4rem;
+      font-weight: 500;
+      border-top: 1px dashed gray;
+      color: black;
+      padding: 1rem 2rem;
+      margin: 0;
+    }
+  
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: var(--color-primary);
+    }
+  
+    .fa-chevron-right {
+      display: inline;
+    }
+
+    .navbar-dark .navbar-nav .services-link {
+      color: var(--color-primary);
+      border-bottom: none;
+    }
+  
+    #title .big-heading {
+      margin-bottom: 5rem;
+    }
+  
+    .feature-title {
+      font-size: 2rem;
+    }
+  
+    .card {
+      margin: 0 auto 1rem;
+      max-width: 90%;
+      text-align: center;
+    }
+
+    footer {
+      padding: 4rem 0;
+    }
+    
+    footer span, 
+    footer i, 
+    footer p {
+    font-size: 1.2rem;
+  }
+  
+    .footer-list {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+      padding: 0;
+    }
+    
+    .footer-group {
+      align-items: flex-start;
+    }
+    
+    .footer-item {
+      padding: 0;
+      margin: 0;
+      max-height: 2rem;
+      display: flex;
+      align-items: flex-end;
+    }
+  
+    .footer-group-one {
+      padding-top: 1rem;
+      transform: translateX(-1.1rem);
+      gap: .8rem;
+    }
+  
+    .instagram-icon i {
+      width: .1rem;
+      height: .1rem;
+      margin-right: .5rem;
+    }
+  
+    .mail-icon i {
+      width: .1rem;
+      height: .1rem;
+      margin-right: .5rem;
+    }
+  
+  }
+
+  
+
+
+
+
+
+
+  /* Scroll Animation */
+
+.reveal {
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
